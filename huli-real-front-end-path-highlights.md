@@ -1,0 +1,120 @@
+- Command Line的使用
+    - 學會常見指令（cd、ls、rm、mv）
+- Git 的使用
+    - 學習 Git 基本概念：什麼是 repository、什麼是 commit、什麼是 staged
+    - 學會使用 add、commit、status、log 等基本指令
+    - 搞清楚 Git 與 GitHub 的差別並學會 push、pull、clone、fetch
+    - 學會使用 branch 與 checkout
+    - Learn Git Branching 
+- npm、Node.js 與 JavaScript 程式基礎
+    - 现代 JavaScript 教程 
+    - 什麼是 package.json
+    - npm install 做了什麼事情
+- 單元測試 Unit Testing 與 Jest
+    - 知道如何使用 Jest 測試一個 function 的輸出入
+    - 盡力想出各種 test case
+- 網路基礎概念
+    - 什麼是前端？什麼是後端
+    - 什麼是 Request？什麼是 Response
+    - HTTP是什麼？ HTTP 的 method 又有那些？
+    - HTTP的常見狀態碼 (200, 301,302, 400, 404, 500...)
+    - 串接 API 看看
+    - Crash Course  
+    - [CS101] 初心者的計概與 coding 火球術
+    - 知道什麼是 Request 跟 Response
+    - 知道什麼是 DNS
+    - 知道 localhost 跟 127.0.0.1 是什麼
+    - 知道什麼是 API
+    - 會使用 Node.js 寫出串接 API 的程式
+    - 知道 HTTP method 有哪些
+    - 知道基本的 HTTP status code，像是 200、301、400、404、500
+- HTML 與 CSS
+    - html & css is hard 
+    - Learn to Code HTML & CSS
+    - MarkSheet
+    - HTML & CSS : 網站設計建置優化之道（我學生推薦的）
+    - 知道如何使用有語意的（semantic）標籤
+    - 知道基本的 CSS Selector
+    - 知道盒模型（box model ）是什麼，以及 padding、margin、border、width/height 與它的關係？
+    - 知道 display 的幾種屬性：block、inline 與 inline-block 差別在哪裡
+    - 知道 position 的幾種屬性：static、relative、absolute、fixed 與 sticky 差別在哪裡
+    - 知道如何使用 Flexbox 來排版
+    - 知道如何使用 media queries
+- The Modern JavaScript Tutorial 與 DOM 以及事件機制
+    - 知道 DOM 的基本操作，例如說插入、刪除、更改屬性等等
+    - 知道事件是如何傳遞的。知道什麼是捕獲，什麼又是冒泡。
+    - 知道 e.preventDefault 與 e.stopPropagation 的作用以及差別
+    - 知道 e.target 與 e.currentTarget 的差別
+    - 知道什麼是事件代理（Event delegation）以及適合用的場合
+- 非同步與 AJAX
+    - What the heck is the event loop anyway? | Philip Roberts | JSConf EU 
+    - 知道非同步與同步的差別
+    - 知道什麼是同源政策（Same-origin policy）
+    - 知道如何存取跨網域的資源（CORS）
+    - 知道如何使用 XMLHttpRequest 或 Fetch 串接 API
+    - 理解 Event loop
+- 基礎後端 PHP 與 MySQL
+    - 理解什麼是前端，什麼是後端
+    - 知道什麼是資料庫
+    - 了解基本的 SQL 語法，包括 Select、Insert Into、Delete 與 Update
+    - 能夠使用 PHP 做出簡單的留言板或是部落格
+- 資訊安全概念
+    - 知道雜湊與加密的差別
+    - 知道什麼是 SQL Injection 以及如何防範
+    - 知道什麼是 XSS 以及如何防範
+    - 知道什麼是 CSRF 以及如何防範
+- 學習後端框架 Express
+    - 知道什麼是 MVC
+    - 知道什麼是 ORM
+- 後端部署
+    - 知道如何設定網域（A、CNAME）
+    - 知道如何用 SSH 遠端連線到自己的主機
+    - 知道怎麼部署自己寫好的程式
+- jQuery 與 Bootstrap
+    - 我覺得可以用這兩個東西寫出一個 TodoList 就沒問題了。
+- CSS 預處理器
+    - 了解 CSS 預處理器的目的以及原理
+    - 能夠把自己之前寫的 CSS 用任一預處理器改寫
+- 非同步歷程：callback、promise 與 async/await
+    - 知道如何使用 Promise
+    - 知道如何使用 .then 及 .catch
+    - 知道如何「同時」執行多個 Promise
+    - 知道如何「按照順序」執行多個 Promise
+    - 知道如何使用 async/await
+- 深入理解 JavaScript 與瀏覽器相關機制
+    - 這邊推薦的學習資源是 How Browsers Work: Behind the scenes of modern web browsers，裡面可以看到現代瀏覽器的執行方式。
+    - 還有 Chrome 滿 20 歲時所推出的 Inside look at modern web browser系列，都能夠大大增進你對於瀏覽器的理解。如果英文不好，上面這些文章都可以找到非官方的中文翻譯版本。
+    - 最後也推薦一堂 Google 在 Udacity 上開的課：Website Performance Optimization，裡面會提到瀏覽器解析 HTML 的過程以及載入資源的順序等等。
+    - 至於 JavaScript 的部分可以從一些常見的問題下手，例如說 closure、scope、this、hoisting 等等，都是常見的關鍵字。
+    - 這邊推薦俗擱大碗的 JavaScript: Understanding the Weird Parts，也推薦You Don’t Know JS 以及我自己之前寫的五篇相關文章：
+        - 該來理解 JavaScript 的原型鍊了
+        - 深入探討 JavaScript 中的參數傳遞：call by value 還是 reference？
+        - 我知道你懂 hoisting，可是你了解到多深？
+        - 所有的函式都是閉包：談 JS 中的作用域與 Closure
+        - 淺談 JavaScript 頭號難題 this：絕對不完整，但保證好懂
+    - 知道什麼是作用域（Scope）
+    - 你知道 Hoisting（提升）是什麼
+    - 你知道 Hoisting 的原理為何
+    - 你知道 Closure（閉包）是什麼
+    - 你能夠舉出一個運用 Closure 的例子
+    - 你知道 Prototype 在 JavaScript 裡是什麼
+    - 你知道大部分情況下 this 的值是什麼
+- gulp 與 webpack
+    - 知道 gulp 的目的以及原理
+    - 知道 webpack 的目的以及原理
+    - 熟悉如何使用 webpack 進行模組化開發
+    - 熟悉如何使用 gulp 建構自動化工作流程
+- 物件導向
+    - 知道什麼是 Class
+    - 知道 Class 與 Instance 的區別
+    - 知道什麼是 super()
+    - 知道如何使用 ES6 的 Class，能夠寫出簡單的物件導向程式
+    - 知道什麼是繼承（Inheritance）
+- React/Vue/Angular 三選一
+    - GitHub - huzidaha/react-naive-book at 28340a809d259638f71ed4d541eb2df981b99223 
+    - 知道 React 的目的以及原理
+    - 知道我們為什麼需要 React
+    - 知道使çReact 跟之前使用 jQuery 的區別
+    - 理解 state èprops 的不同
+    - 熟悉 React 基本操作
+- 
