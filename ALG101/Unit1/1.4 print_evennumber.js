@@ -11,6 +11,14 @@
 如果不能，繼續執行
 */
 
+/* pseudo code
+for ( i from 1 to 100) do
+    if (i mod 2 === 0 ) then
+        print i
+    end if
+end for
+*/
+
 for (i = 1; i<101; i++){
     if(i % 2 === 0){
         console.log(i)

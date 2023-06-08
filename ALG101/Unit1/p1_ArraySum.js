@@ -21,6 +21,6 @@ function sum(int){
 var int = [1, 2, 3, 4]
 var init = 0
 for (i = 0; i < int.length; i++){
-    init += int[i]
+    init += int[i] // origin : init = init + int[i]
 }
 console.log(init)
