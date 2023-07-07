@@ -34,7 +34,7 @@ N=4
 5. 會有 n-1 個 |
 
    */
-let n = 4
+let n = 5 
 
 for(let i = 1; i<=n; i++) {
 
