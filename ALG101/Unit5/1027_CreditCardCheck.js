@@ -54,22 +54,30 @@ function weight(str) {
 	if(str.length < 16 || str.length > 16) return false
 	let sum = 0
 	let odd = 0
+	let check_number = 0
+	
 	for(i=0; i<str.length-1; i++){
 		if (i % 2 == 0){
 			odd = Number(str[i]) * 2
 			if(odd >= 10) {
-				 sum += odd - 96
-				console.log('sum', sum)
+				 sum += odd - 9
 			}
-			sum += odd
+			else(sum += odd)
 		}
-		else if (i % 2 == 1){
+		else if  (i % 2 == 1) {
 			sum += Number(str[i])
-			console.log('sum', sum)
 		}
 	} 
-	check_number = sum 
+	check_number = 10 - (sum % 10)
 	console.log('check_number', check_number)
-	return check_number == str[16]
+	
+	if (check_number == str[15] ) {
+		if(str[0] == 5) {
+			console.log('Master Card')
+		} else if (str[0] == 4) {
+			console.log('Visa Card')
+		} 
+	}else (console.log('INVALID'))
+	
 }
 	console.log(weight('5412345678901232'))
