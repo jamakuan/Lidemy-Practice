@@ -73,11 +73,10 @@ function weight(str) {
 	
 	if (check_number == str[15] ) {
 		if(str[0] == 5) {
-			console.log('Master Card')
+			return ('Master Card')
 		} else if (str[0] == 4) {
-			console.log('Visa Card')
+			return('Visa Card')
 		} 
-	}else (console.log('INVALID'))
-	
-}
+	}else return('INVALID')
+	}
 	console.log(weight('5412345678901232'))
