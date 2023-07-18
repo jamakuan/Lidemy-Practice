@@ -12,26 +12,48 @@
 
 */
 
-function Super_number(str) {
-	let sum = 0
-	let sum2 = 0
-	let sum3 = 0
-	for(i=0; i<= str.length-1; i++){
-		sum+=Number(str[i])
-	} 
-	while(sum != 0 ){
-		sum2+= sum % 10
-		sum = Math.floor(sum / 10)
-	}
-	if(sum2 > 10 ) {
-		while(sum2 != 0) {
-			sum3 += sum2 % 10
-			sum2 = Math.floor(sum2 / 10)
-		}
-		return sum3
-			
-		
-	}else return(sum2)
-}
+//function Super_number(str) {
+//	let sum = 0
+//	let sum2 = 0
+//	let sum3 = 0
+//	for(i=0; i<= str.length-1; i++){
+//		sum+=Number(str[i])
+//	} 
+//	while(sum != 0 ){
+//		sum2+= sum % 10
+//		sum = Math.floor(sum / 10)
+//	}
+//	if(sum2 > 10 ) {
+//		while(sum2 != 0) {
+//			sum3 += sum2 % 10
+//			sum2 = Math.floor(sum2 / 10)
+//		}
+//		return sum3
+//		
+//		
+//	}else return(sum2)
+//}
+//
+//console.log(Super_number('19971117'))
 
-console.log(Super_number('19951203'))
+
+//Ans
+function solve(lines){
+	let temp = lines[0].split(' ')
+	// 19911117
+	let num = Number(temp[0] + temp[1] + temp[2])
+	let p = addDigits(num)
+	while(p >= 10) {
+		p = addDigits(p)
+	}
+	console.log(p)
+}
+function addDigits(n) {
+	let sum = 0
+	while(n != 0) {
+		sum += n % 10
+		n = Math.floor(n / 10)
+	}
+	return sum
+}
+solve(['1991 11 17'])
