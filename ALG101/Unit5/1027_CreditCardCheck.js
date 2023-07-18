@@ -50,33 +50,93 @@ last = check number = true
 
 
 // weight multiple, odd number * 2, even number*1, （if >10）str-9 first then multiple, 
-function weight(str) {
-	if(str.length < 16 || str.length > 16) return false
-	let sum = 0
-	let odd = 0
-	let check_number = 0
+//function weight(str) {
+//	if(str.length < 16 || str.length > 16) return false
+//	let sum = 0
+//	let odd = 0
+//	let check_number = 0
+//	
+//	for(i=0; i<str.length-1; i++){
+//		if (i % 2 == 0){
+//			odd = Number(str[i]) * 2
+//			if(odd >= 10) {
+//				 sum += odd - 9
+//			}
+//			else(sum += odd)
+//		}
+//		else if  (i % 2 == 1) {
+//			sum += Number(str[i])
+//		}
+//	} 
+//	check_number = 10 - (sum % 10)
+//	console.log('check_number', check_number)
+//	
+//	if (check_number == str[15] ) {
+//		if(str[0] == 5) {
+//			return ('Master Card')
+//		} else if (str[0] == 4) {
+//			return('Visa Card')
+//		} 
+//	}else return('INVALID')
+//	}
+//	console.log(weight('5412345678901232'))
 	
-	for(i=0; i<str.length-1; i++){
-		if (i % 2 == 0){
-			odd = Number(str[i]) * 2
-			if(odd >= 10) {
-				 sum += odd - 9
+	
+	// Ans
+	function solve(lines){
+		let card = removeDash(lines[0])
+		console.log(card)
+		let sum = evenDigitsCount(card) + oddDigitsCount(card)
+		let p = sum % 10
+		if (p != 0) {
+			p = 10 - p
+		}
+		
+		if (p !== Number(card[15])) {
+			return 'INVALID'
+		} else {
+			
+			if (card[0] === '5') {
+				return 'MASTER_CARD'
+			} else {
+				return 'VISA'
 			}
-			else(sum += odd)
 		}
-		else if  (i % 2 == 1) {
-			sum += Number(str[i])
-		}
-	} 
-	check_number = 10 - (sum % 10)
-	console.log('check_number', check_number)
-	
-	if (check_number == str[15] ) {
-		if(str[0] == 5) {
-			return ('Master Card')
-		} else if (str[0] == 4) {
-			return('Visa Card')
-		} 
-	}else return('INVALID')
 	}
-	console.log(weight('5412345678901232'))
+	
+	function removeDash(str){
+		let result = ''
+		for(let i = 0; i<str.length; i++) {
+			if(str[i] !== '-') {
+				result += str[i]
+			}
+		}
+		return result
+		
+	}
+	
+	console.log(solve(['5412-3456-7890-1232']))
+	
+	// sum even numbers
+	function evenDigitsCount(card){
+		let sum = 0
+		for (let i = 1; i <= 13; i+=2) {
+			sum += Number(card[i])
+		}
+		return sum
+		
+	}
+	
+	// sum odd numbers
+	function oddDigitsCount(card){
+		let sum = 0
+		for(let i=0; i<=15; i+=2) {
+			let p = Number(card[i]) * 2
+			if (p >= 10) {
+				p -= 9
+			}
+			sum += p
+		
+		}
+		return sum
+	}
