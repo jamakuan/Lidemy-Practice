@@ -15,3 +15,18 @@ function perfect_square(n) {
 	}return result
 }
 console.log(perfect_square(40))
+
+
+// Ans
+function solve(lines) {
+	let n = Number(lines[0])
+	let sum = 0
+	for(let i=1; i<=n; i++){
+		if (isSquare(i)) {
+			sum += 1
+		}
+	}
+	console.log(sum)
+}
+
+function isSquare()
