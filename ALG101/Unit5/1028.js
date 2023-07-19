@@ -56,4 +56,4 @@ function addDigits(n) {
 	}
 	return sum
 }
-solve(['1991 11 17'])
+solve(['1991 11 7'])

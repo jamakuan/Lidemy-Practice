@@ -12,4 +12,5 @@ function ad(str){
 console.log(ad('aba'))
 
 
-// method 2 
+// ans
+
