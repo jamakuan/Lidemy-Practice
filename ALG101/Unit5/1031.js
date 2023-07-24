@@ -9,12 +9,15 @@
 */
 function perfect_square(n) {
 	let result = 0
-	let s = Math.floor(Math.sqrt(n))
-	for(i = 1; i<=s; i++) {
-		result += i*i
+	for(let i = 1; i<= n; i++){
+		let s = Math.floor(Math.sqrt(i))
+		if ( i == s**2){
+			result += i
+		}
 	}return result
 }
-console.log(perfect_square(40))
+
+console.log(perfect_square(30))
 
 
 // Ans
@@ -23,10 +26,15 @@ function solve(lines) {
 	let sum = 0
 	for(let i=1; i<=n; i++){
 		if (isSquare(i)) {
-			sum += 1
+			sum += i
 		}
 	}
 	console.log(sum)
 }
 
-function isSquare()
+function isSquare(n) {
+	let r = Math.floor(Math.sqrt(n))
+	return r*r === n
+}
+
+solve(['55'])
