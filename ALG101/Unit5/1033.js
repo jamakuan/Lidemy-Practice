@@ -74,3 +74,32 @@ function closeone(n, x, y) {
 		
 console.log(closeone(4, x, y))
 console.log(closeone(4, x1, y1))
+
+// Ans
+
+function solve(lines) {
+	let n = Number(lines[0])
+	let dots = []
+	for(let i=1; i<lines.length; i++) {
+		let temp = lines[i].split(' ')
+		dots.push({
+			x: Number(temp[0]), 
+			y: Number(temp[1])
+		})
+	}
+	console.log(dots)
+}
+
+function distance(x1, y1, x2, y2) {
+	let dis = Math.sqrt(
+		abs(x1-x2) * abs(x1-x2) + 
+		abs(y1-y2) * abs(y1-y2) 
+	)
+	return dis
+}
+
+function abs(n) {
+	if(n < 0 ){
+		return -n
+	}return n
+}
