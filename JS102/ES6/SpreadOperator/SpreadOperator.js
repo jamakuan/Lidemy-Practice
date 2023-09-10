@@ -33,3 +33,15 @@ console.log('arr:', arr)
 var arr2 = [... arr]
 console.log('arr2:', arr2)
 console.log(arr[3] === arr2[3])
+
+// 記憶體位置不同
+var obj = {
+	a: 1, 
+	b: 2
+}
+
+var obj = {
+	...obj
+}
+
+console.log(obj, obj2, obj === obj2)
