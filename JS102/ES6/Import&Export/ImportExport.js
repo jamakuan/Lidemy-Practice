@@ -1,3 +1,3 @@
-import { add } from "./utils";
+import * as add from './utils';
 
-console.log(add(3, 5));
+console.log(add.add(3,5), add.PI)
