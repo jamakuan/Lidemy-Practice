@@ -5,3 +5,6 @@
 
 - https://developer.mozilla.org/en-US/docs/Glossary/Semantics
 - https://www.w3schools.com/html/html5_semantic_elements.asp
+
+# Form References
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
